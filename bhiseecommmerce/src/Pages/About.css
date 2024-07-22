@@ -1,0 +1,41 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppertext {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uppertext h1{
+    font-size: 80px;
+}
+.image img{ 
+    position: relative;
+    width:84em;
+    height: 900px;
+}
+
+.container {
+    position: absolute;
+}
+.Middle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hrline {
+    position: relative;
+    top: 14rem;
+    color: black;
+    height: 10rem;
+}

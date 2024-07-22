@@ -1,0 +1,9 @@
+.heroscontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 100px;
+    color:gray;
+}

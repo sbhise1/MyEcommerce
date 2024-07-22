@@ -1,0 +1,59 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.navitems {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Align nav items to the right */
+}
+
+.navitems div a {
+    text-decoration: none;
+    color: black;
+}
+
+.navitems > div {
+    margin-right: 2rem;
+    position: relative; /* Needed for the dropdown positioning */
+    cursor: pointer;
+}
+
+
+
+.drop {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below the Account div */
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure the dropdown appears above other elements */
+}
+
+.drop div {
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+.Ac:hover .drop {
+    display: block;
+}
+
+.carticon img {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: 15px;
+}
+.cart {
+    display: flex;
+    gap: 10px;
+}

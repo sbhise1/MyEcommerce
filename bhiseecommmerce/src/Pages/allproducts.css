@@ -1,0 +1,25 @@
+.Allproducts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: #abb8c3                                            ;
+}
+.Allproducts img{
+    width: 350px;
+    height: 250px;
+}
+
+.procontainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+
+.Prodetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
