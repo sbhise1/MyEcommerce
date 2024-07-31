@@ -13,6 +13,7 @@ import MyAccount from './Pages/MyAccount';
 import Cart from './Pages/Cart';
 import SingleProduct from './Components/SingleProduct/Singleproduct';
 import Mugs from './Pages/Mugs';
+import Login from './Pages/Login';
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
           <Route path="/my-account" element={<MyAccount />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/product/:productId" element={<SingleProduct />} />
-          <Route path="/jewelery" element={<Mugs />}>
-          </Route>
+          <Route path="/jewelery" element={<Mugs />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
         </Routes>
         <Footer />
       </MyProvider>

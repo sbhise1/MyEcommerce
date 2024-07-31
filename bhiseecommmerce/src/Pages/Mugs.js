@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { MyContext } from '../Context/Context';
 import './allproducts.css'; // Assuming the same CSS file for product styling
 
-const jewelery = () => {
+const Jewelery = () => {
   const { data, error } = useContext(MyContext);
   const [jewelery, setjewelery] = useState([]);
 
@@ -43,4 +43,4 @@ const jewelery = () => {
   );
 };
 
-export default jewelery;
+export default Jewelery;

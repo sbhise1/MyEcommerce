@@ -10,22 +10,22 @@ const Products = () => {
     return <div>Error: {error.message}</div>;
   }
 
-  if (!data) {
+  if (!data.length) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className='Allproducts'>
+    <div className='all-products'>
       {data.map((item) => (
-        <div key={item.id} className="procontainer">
+        <div key={item.id} className="product-container">
           <Link to={`/product/${item.id}`}>
-            <div>
+            <div className="product-image">
               <img src={item.image} alt={item.title} />
             </div>
-            <div className='Prodetails'>
-              <div>{item.category}</div>
-              <div>{item.title.length >= 15 ? `${item.title.substring(0, 10)}...` : item.title}</div>
-              <div>${item.price}</div>
+            <div className='product-details'>
+              <div className='product-category'>{item.category}</div>
+              <div className='product-title'>{item.title.length >= 15 ? `${item.title.substring(0, 10)}...` : item.title}</div>
+              <div className='product-price'>${item.price}</div>
             </div>
           </Link>
         </div>
