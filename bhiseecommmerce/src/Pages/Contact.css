@@ -1,0 +1,105 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-contact h1{
+  font-size: 70px;
+}
+
+.intro-contact p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:'white';
+
+}
+.second-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 400px;
+  margin-top:80px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(0 0 0 / 12%);
+}
+
+.contact-header {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group.row {
+  flex-direction: row;
+  /* Align items in a row */
+  gap: 10px;
+  /* Space between the inputs */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff4d4d;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.group-first {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.submitbtn {
+  border: 2px solid black;
+  width: 150px;
+  color: black;
+  height: 50px;
+}
+
+.Contact-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20rem;
+}
+
+.center {
+  text-align: center;
+}

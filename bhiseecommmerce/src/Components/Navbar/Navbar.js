@@ -32,7 +32,7 @@ const Navbar = () => {
           Account
           <div className="drop">
             <div>
-              <Link to="/my-account">My Account</Link>
+              <Link to="/login">My Account</Link>
             </div>
             <div>
               <Link to="/cart">Cart</Link>
@@ -40,15 +40,17 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="cart">
-          <div className='currencysymb'>
-            <p>&#8377;</p>
-          </div>
-          <div className='carticon'>
-            <img src="cart_85989.png" alt="Cart" />
-          </div>
-          <p>0</p>
+          <Link to="/cart">
+        <div className="cart-nav">
+            <div className='currencysymb'>
+              <p>&#8377;</p>
+            </div>
+            <div className='carticon'>
+              <img src="cart_85989.png" alt="Cart" />
+            </div>
+            <p>0</p>
         </div>
+          </Link >
       </div>
     </div>
   );
